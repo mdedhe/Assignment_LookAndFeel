@@ -1,14 +1,15 @@
 /**
  * Your JS code here
  */
-
-/**
- * Sample code
- */
-document.addEventListener('DOMContentLoaded', function() {
-  var ulElement = document.getElementById('links');
-  var liElement = document.createElement('li');
-  liElement.appendChild(document.createTextNode('created by main.js'));
-
-  ulElement.appendChild(liElement);
-});
+function mylmfuction() {
+    var popup = document.getElementById("lm");
+    popup.classList.toggle("show")
+}
+function mylgfuction() {
+    var popup = document.getElementById("lg");
+    popup.classList.toggle("show")
+}
+function mydtfuction() {
+    var popup = document.getElementById("dt");
+    popup.classList.toggle("show")
+}

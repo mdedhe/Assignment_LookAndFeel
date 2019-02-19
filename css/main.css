@@ -9,19 +9,53 @@ html {
 
 /*Set background image*/
 .container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+    background-image: url("/img/ai.jpg");
+    height: 100%;
+    background-position: initial;
+    background-size: 100%;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
+.popup {
+    position: relative;
+    display:contents
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    background-color: black;
+    color:white;
+
+    }
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn;
+        animation: fadeIn;
+    }
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Position text in the left */
+.container {
+  position: page;
+  color: white;
   top: 70%;
   left: 39%;
-  text-align: center;
+  text-align: left;
   font-size: 25px;
 }
 
@@ -37,11 +71,21 @@ html {
 
 /*Set text color for a tag inside middle class and ul>li element*/
 .middle ul li a {
-  color: beige;
+  color: white;
 }
 
 /*Change text color and decoration for a tags inside middle class and ul>li element*/
 .middle ul li a:hover {
-  color: red;
+  color: blue;
   text-decoration: none;
 }
+/* font class of style*/
+.fontClass {
+    font-family: 'Times New Roman', Times, serif
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+}
+
