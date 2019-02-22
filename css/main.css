@@ -112,4 +112,21 @@ html {
     background-color: dimgray;
     color: white;
 }
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px,2px;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-github {
+    background: gray;
+    color: white;
+}
 
