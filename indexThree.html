@@ -13,22 +13,62 @@
     <div class="container">
         <div class="middle">
             <h2>
-                Useful links
+                Deep Learning
             </h2>
-            <ul id="links">
-                <li>
-                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS tutorial- w3schools</a>
-                </li>
-                <li>
-                    <a href="https://pixabay.com/" target="_blank">Free Images</a>
-                </li>
-            </ul>
-            <a href="./indexZero.html" target="_blank">Home Screen</a>
+            <p>
+                Deep learning is an aspect of artificial intelligence (AI) that is concerned with emulating the
+                learning approach that human beings use to gain certain types of knowledge. At its simplest, deep
+                learning can be thought of as a way to automate predictive analytics.
+            </p>
+            <p> Below are the details on Deep Learning.</p>
+            <button class="collapsible">Why Deep Learning Matters</button>
+            <div class="content">
+                <p>
+                    In a word, accuracy. Deep learning achieves recognition accuracy at higher levels than ever before.
+                    This helps consumer electronics meet user expectations, and it is crucial for safety-critical
+                    applications like driverless cars. Recent advances in deep learning have improved to the point where
+                    deep learning outperforms humans in some tasks like classifying objects in images.
+                </p>
+            </div>
+            <button class="collapsible">How Deep Learning Works</button>
+            <div class="content">
+                <p>
+                    Most deep learning methods use neural network architectures, which is why deep learning models are often referred
+                    to as deep neural networks.The term “deep” usually refers to the number of hidden layers in the neural network.
+                    Traditional neural networks only contain 2-3 hidden layers, while deep networks can have as many as 150.
+                    Deep learning models are trained by using large sets of labeled data and neural network architectures that learn
+                    features directly from the data without the need for manual feature extraction.
+                </p>
+            </div>
+            <button class="collapsible">Choosing Between Machine Learning and Deep Learning</button>
+            <div class="content">
+                <p>
+                    Machine learning offers a variety of techniques and models you can choose based on your application,
+                    the size of data you're processing, and the type of problem you want to solve. A successful deep learning
+                    application requires a very large amount of data (thousands of images) to train the model, as well as GPUs,
+                    or graphics processing units, to rapidly process your data.
+                </p>
+            </div>
         </div>
     </div>
 
     <!--JS link-->
-    <script src="./js/main.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
